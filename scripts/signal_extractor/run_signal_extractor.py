@@ -7,15 +7,9 @@ from itertools import chain
 import mysql.connector
 import pandas as pd
 
-try:
-    from scripts.data_extractor.entity_extractor import EntityExtractor
-    from scripts.data_loading.meaningful_taxonomy_json_builder import taxonomy_data
-    from scripts.signal_extractor.signal_extractor import SignalExtractor
-except ModuleNotFoundError:
-    from data_extractor.entity_extractor import EntityExtractor
-    from data_loading.meaningful_taxonomy_json_builder import taxonomy_data
-    from signal_extractor import SignalExtractor
-
+from scripts.data_extractor.entity_extractor import EntityExtractor
+from scripts.data_loading.meaningful_taxonomy_json_builder import taxonomy_data
+from scripts.signal_extractor.signal_extractor import SignalExtractor
 
 def fetch_all_listings():
     conn = mysql.connector.connect(
