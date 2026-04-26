@@ -40,7 +40,7 @@ class IntentPrediction:
 
 
 class IntentClassifier:
-    """Starter-code based classifier with minimal Week 7 extensions."""
+    """IntentClassifier class."""
 
     def __init__(self):
         self.vectorizer = TfidfVectorizer(max_features=500)
