@@ -20,7 +20,7 @@ def fetch_all_listings():
         database='real_estate'
     )
 
-    cursor = conn.cursor(dictionary=True)
+    cursor = conn.cursor(dictionary=True, buffered=True)
     try:
         cursor.execute(
             """
@@ -55,6 +55,7 @@ def run(output_path='data/processed/signal_extraction_full.json'):
     signal_extractor = SignalExtractor(taxonomy_data, extractor)
 
     count = 0
+    skipped = 0
     data_source = 'mysql.rets_property'
 
     with open(output_path, 'w', encoding='utf-8') as f:
@@ -72,7 +73,11 @@ def run(output_path='data/processed/signal_extraction_full.json'):
             records = fetch_from_local_csv()
 
         for record in records:
-            result = signal_extractor.extract_signals(record)
+            try:
+                result = signal_extractor.extract_signals(record)
+            except Exception:
+                skipped += 1
+                continue
             if not first:
                 f.write(',\n')
             f.write(json.dumps(result, ensure_ascii=False))
@@ -82,6 +87,7 @@ def run(output_path='data/processed/signal_extraction_full.json'):
         f.write('\n]\n')
 
     print(f'Processed {count} records')
+    print(f'Skipped: {skipped} records')
     print(f'Source: {data_source}')
     print(f'Saved: {output_path}')
 

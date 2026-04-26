@@ -45,7 +45,10 @@ class EntityExtractor:
         '''Extract square-foot value from common square-foot patterns.'''
         match = re.search(r'([\d,]+)\s*(?:sqft|sq\s*ft|square\s*feet)', text, re.I)
         if match:
-            return int(match.group(1).replace(',', ''))
+            raw = match.group(1)
+            digits_only = re.sub(r'\D', '', raw)
+            if digits_only:
+                return int(digits_only)
         return None
 
     def extract_amenities(self, text):
