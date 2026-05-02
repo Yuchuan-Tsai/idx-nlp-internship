@@ -29,6 +29,18 @@ This folder contains the project's data processing and NLP pipeline scripts.
 - `semantic_search.py`: Defines `SemanticSearcher` (sentence embedding + FAISS retrieval).
 - `__init__.py`: Exposes semantic search utilities.
 
+### `scripts/listing_summarization`
+- `listing_summarizer.py`: Defines Week 8 `ListingSummarizer` for extractive summary generation, plus `rouge_l` token-level F1 helper.
+- `answerability_checker.py`: Defines Week 8 `AnswerabilityChecker` for pre/post query checks.
+- `evaluate_summary.py`: Runs `ListingSummarizer` over `data/processed/gold_summaries.jsonl` and reports mean ROUGE-L.
+- `__init__.py`: Exposes listing summarization, answerability, and evaluation utilities.
+
+### `scripts/compliance`
+- `compliance_checker.py`: Defines Week 9 `ComplianceChecker` for Fair Housing language checks. See `docs/week9_fair_housing_compliance.md` for rule background.
+- `evaluate_compliance.py`: Runs `ComplianceChecker` over `data/processed/gold_compliance.jsonl` and reports recall/precision.
+- `example_workflow.py`: `submit_listing(text)` integration example that gates on error/warning/info severity.
+- `__init__.py`: Exposes compliance utilities, evaluator, and submission workflow.
+
 ### `scripts` (root package)
 - `__init__.py`: Declares top-level subpackages (`data_loading`, `data_cleaner`, `data_extractor`, `query_parser`).
 

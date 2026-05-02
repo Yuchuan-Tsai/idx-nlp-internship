@@ -1,0 +1,30 @@
+{"text": "Cozy condo with low HOA, no children allowed.", "violating": true, "categories": ["familial"]}
+{"text": "Quiet adults only retirement community with shared garden.", "violating": true, "categories": ["familial"]}
+{"text": "Studio apartment, perfect for singles working downtown.", "violating": true, "categories": ["familial"]}
+{"text": "Two-story home with steep stairs, no wheelchairs.", "violating": true, "categories": ["disability"]}
+{"text": "Buyer must be able-bodied to maintain the half-acre lot.", "violating": true, "categories": ["disability"]}
+{"text": "Beautiful 4 bedroom in a quiet white neighborhood near the park.", "violating": true, "categories": ["race"]}
+{"text": "Walk to a great variety of ethnic restaurants and cafes.", "violating": true, "categories": ["race"]}
+{"text": "Live in this diverse area minutes from downtown.", "violating": true, "categories": ["race"]}
+{"text": "Welcoming christian community with weekly potlucks.", "violating": true, "categories": ["religion"]}
+{"text": "Centrally located in a jewish neighborhood close to synagogues.", "violating": true, "categories": ["religion"]}
+{"text": "Adults only complex, no children, christian community values.", "violating": true, "categories": ["familial", "religion"]}
+{"text": "Charming bungalow, perfect for singles or couples without kids.", "violating": true, "categories": ["familial"]}
+{"text": "Christian community in a diverse area near top schools.", "violating": true, "categories": ["religion", "race"]}
+{"text": "No wheelchairs, no children, second-floor walkup only.", "violating": true, "categories": ["disability", "familial"]}
+{"text": "Must be able-bodied; steep driveway and basement laundry.", "violating": true, "categories": ["disability"]}
+{"text": "Beautiful 3 bed home with pool and updated kitchen.", "violating": false, "categories": []}
+{"text": "Spacious 4 bed 2 bath single family home with backyard.", "violating": false, "categories": []}
+{"text": "Modern condo with balcony, gym access, and assigned parking.", "violating": false, "categories": []}
+{"text": "Move-in ready home with hardwood floors and fresh paint.", "violating": false, "categories": []}
+{"text": "Top-rated schools, walking distance to the shopping center.", "violating": false, "categories": []}
+{"text": "Renovated kitchen with stainless steel appliances and quartz counters.", "violating": false, "categories": []}
+{"text": "Two-car garage and large fenced lot suitable for entertaining.", "violating": false, "categories": []}
+{"text": "Fireplace, vaulted ceilings, and abundant natural light throughout.", "violating": false, "categories": []}
+{"text": "Open floor plan with mountain views and private deck.", "violating": false, "categories": []}
+{"text": "Master suite with walk-in closet and en-suite bath.", "violating": false, "categories": []}
+{"text": "Newly painted exterior, updated bathrooms, and tankless water heater.", "violating": false, "categories": []}
+{"text": "Quiet cul-de-sac with mature trees and underground utilities.", "violating": false, "categories": []}
+{"text": "Energy-efficient solar panels and dual-pane windows installed.", "violating": false, "categories": []}
+{"text": "Easy commute to downtown via highway access and rail station.", "violating": false, "categories": []}
+{"text": "Central air, attached garage, and tankless water heater included.", "violating": false, "categories": []}
